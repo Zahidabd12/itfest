@@ -1,0 +1,147 @@
+/* Reset CSS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Akhir Reset CSS */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;900&display=swap');
+
+
+:root{
+    --headline: #094067;
+    --btn-bg: #3DA9FC;
+    --white: #fffffe;
+    --red: #fa8072;
+    --paragraf: #5F6C7B;
+}
+
+body{
+    font-family: 'Poppins';
+}
+/* Navbar */
+nav{
+    display: flex;
+    padding: 1rem;
+    /* border: 2px solid red; */
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+}
+nav .brand{
+    margin-left: 2.5rem;
+    margin-bottom: .5rem;
+}
+ul{
+    display: flex;
+    margin-left: auto;
+}
+
+li a{
+    margin: .7rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--headline);
+    font-family: 'Poppins';
+    font-weight: 900;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, .25);
+}
+
+.btn{
+    background-color:var(--btn-bg);
+    color: var(--white);
+    padding: .7rem 1.5rem .7rem 1.5rem;
+    border-radius: 13px;
+    border: transparent;
+    font-weight: 900;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: none;
+}
+
+/* Hero */
+#hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/background.png);
+}
+.container-fluid{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-text{
+    width: 50%;
+    height: 100vh;
+    padding: 3.5rem;
+}
+
+.hero-text h1{
+    padding: 10rem 0rem 0rem;
+    font-weight: 900;
+    color: var(--headline);
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+
+.hero-text p{
+    margin: 1rem 0 1rem 0;
+    font-size: 700;
+    color: var(--paragraf);
+}
+.hero-image{
+    width: 50%;
+    height: 100vh;
+}
+
+.hero-image img{
+    position: absolute;
+    bottom: 0;
+}
