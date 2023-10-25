@@ -133,7 +133,8 @@ li a{
 
 .hero-text p{
     margin: 1rem 0 1rem 0;
-    font-size: 700;
+    font-size: 900;
+    font-size: 1.1rem;
     color: var(--paragraf);
 }
 .hero-image{
@@ -148,3 +149,8 @@ li a{
 
 
 /* Akhir Hero */
+
+/* Awal layanan */
+#layanan{
+    background-color: var(--red);
+}
