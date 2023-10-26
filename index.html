@@ -1,44 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>itfest</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/Logo-icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Nusantara Medics.</title>
+  </head>
+  <body>
     <!-- Navbar -->
     <nav>
-        <div class="brand">
-            <img src="img/Logo.png" alt="nusantaraMedics" height="80px">
+      <div class="brand">
+        <img src="img/Logo.png" alt="nusantaraMedics" height="80px" />
+      </div>
+      <div class="nav-toggle">
+      </div>
+
+      <div class="overlay-nav d-flex">
+        <div class="nav-item">
+          <a href="#layanan" class="nav-item">Layanan</a>
         </div>
-        <ul>
-            <li><a href="#">Layanan</a></li>
-            <li><a href="#">Dokter</a></li>
-            <li><a href="#">Obat</a></li>
-            <li><a href="#" class="btn">Mulai Konsultasi</a></li>
-        </ul>
+        <div class="nav-item">
+          <a href="#" class="nav-item">Dokter</a>
+        </div>
+        <div class="nav-item">
+          <a href="#" class="nav-item">Obat</a>
+        </div>
+        <div class="nav-item">
+          <a href="#" class="btn">Mulai Konsultasi</a>
+        </div>
+      </div>
+      
+
+      <ul>
+        <li><a href="#layanan" class="nav-item">Layanan</a></li>
+        <li><a href="#" class="nav-item">Dokter</a></li>
+        <li><a href="#" class="nav-item">Obat</a></li>
+        <li><a href="#" class="btn">Mulai Konsultasi</a></li>
+      </ul>
     </nav>
     <!-- Akhir Navbar -->
 
     <!-- Awal Hero -->
     <section id="hero">
-        <div class="container-fluid">
-            <div class="hero-text">
-                <h1>Temukan Tenaga <br> Medis Handal dan <br> Terpercaya</h1>
-                <p>&quot;Kami Mengundang Anda untuk Menemukan Kualitas Layanan Medis Terbaik yang Tidak Hanya Handal dan Terpercaya, Tetapi Juga Didukung oleh Tim Profesional Berkualitas untuk Menjamin Kesehatan dan Kesejahteraan Anda yang Optimal.&quot;</p>
-                <button class="btn">Mulai Konsultasi</button>
-            </div>
-            <div class="hero-image">
-                <img src="img/dokter.png" alt="">
-            </div>
+      <div class="container-fluid d-flex h-100">
+        <div class="hero-text">
+          <h1>
+            Temukan Tenaga <br />
+            Medis Handal dan <br />
+            Terpercaya
+          </h1>
+          <p>
+            &quot;Kami Mengundang Anda untuk Menemukan Kualitas Layanan Medis
+            Terbaik yang Tidak Hanya Handal dan Terpercaya, Tetapi Juga Didukung
+            oleh Tim Profesional Berkualitas untuk Menjamin Kesehatan dan
+            Kesejahteraan Anda yang Optimal.&quot;
+          </p>
+          <a href="#">
+            <button class="btn">Mulai Konsultasi</button>
+          </a>
         </div>
+        <div class="hero-image">
+          <img src="img/dokter.png" alt="" />
+        </div>
+      </div>
     </section>
 
     <!-- Layanan -->
 
     <section id="layanan">
-        <div class="container-fluid"></div>
+      <div class="container h-100">
+        <h1>Layanan Kesehatan Untuk Anda</h1>
+        <p>
+          Nusantara medics menyediakan berbagai macam layanan kesehatan yang
+          dapat anda akses dan manfaatkan, pelayanan yang kami sediakan antara
+          lain :
+        </p>
+        <div class="card-container d-flex">
+          <div class="card"></div>
+          <div class="card"></div>
+          <div class="card"></div>
+          <div class="card"></div>
+        </div>
+      </div>
     </section>
-</body>
+
+    <!-- Akhir Layanan -->
+
+    <script src="script.js"></script>
+  </body>
 </html>
