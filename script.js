@@ -63,7 +63,6 @@ function handleScroll() {
 window.addEventListener("scroll", handleScroll);
 handleScroll();
 
-// main.js
 window.onscroll = function() {
   updateProgressBar();
 };
