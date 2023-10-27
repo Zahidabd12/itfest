@@ -346,6 +346,7 @@ li a.nav-item.active {
 .layanan-desc{
   transform: translateX(-100%);
   opacity: 0;
+  transition: .2s ease-in;
 }
 .align-items-center {
   align-items: center;
