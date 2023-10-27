@@ -62,3 +62,18 @@ function handleScroll() {
 
 window.addEventListener("scroll", handleScroll);
 handleScroll();
+
+// main.js
+window.onscroll = function() {
+  updateProgressBar();
+};
+
+function updateProgressBar() {
+  const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+  const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+  const clientHeight = document.documentElement.clientHeight || document.body.clientHeight;
+
+  const scrollPercentage = (scrollTop / (scrollHeight - clientHeight)) * 100;
+  const progressBar = document.querySelector('.progress-bar');
+  progressBar.style.width = scrollPercentage + '%';
+}

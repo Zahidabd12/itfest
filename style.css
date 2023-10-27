@@ -205,6 +205,22 @@ table {
 body {
   font-family: "Poppins";
 }
+
+/* styles.css */
+.progress-bar {
+  width: 0;
+  height: 4px;
+  background-color: #007bff; /* Warna progress bar */
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+  left: 50%; /* Posisi tengah horisontal */
+  transform: translateX(-50%); /* Membuat elemen berada di tengah */
+  transform-origin: left center; /* Animasi dari tengah */
+  transition: width 0.2s; /* Efek animasi */
+}
+
+
 /* Navbar */
 nav {
   display: flex;
