@@ -196,6 +196,12 @@ table {
     transform: translateY(0);
   }
 }
+
+.aos{
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+  transition: .6s ease-out;
+}
 body {
   font-family: "Poppins";
 }
@@ -337,7 +343,10 @@ li a.nav-item.active {
   background-color: var(--white);
   text-align: center;
 }
-
+.layanan-desc{
+  transform: translateX(-100%);
+  opacity: 0;
+}
 .align-items-center {
   align-items: center;
 }

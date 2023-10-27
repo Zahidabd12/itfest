@@ -37,3 +37,28 @@ button.addEventListener("click", function () {
     barTiga.classList.remove("clicked");
   }
 });
+
+// JavaScript
+function handleScroll() {
+  const animatedObjects = document.querySelectorAll(".card");
+  const layanan = document.getElementsByClassName("layanan-desc")[0];
+  const windowHeight = window.innerHeight;
+
+  animatedObjects.forEach((animatedObject) => {
+    const objectPosition = animatedObject.getBoundingClientRect().top;
+    const layananPosition = layanan.getBoundingClientRect().top;
+    if (layananPosition < windowHeight * 0.75) {
+      layanan.classList.add('aos');
+    } else {
+      layanan.classList.remove('aos');
+    }
+    if (objectPosition < windowHeight * 0.75) {
+      animatedObject.style.opacity = 1;
+    } else {
+      animatedObject.style.opacity = 0;
+    }
+  });
+}
+
+window.addEventListener("scroll", handleScroll);
+handleScroll();
