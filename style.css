@@ -423,14 +423,11 @@ li a.nav-item.active {
   }
   .bar {
     width: 100%;
-    background-color: var(--headline);
+    background-color: var(--headline) !important;
     height: 10px;
     margin: 5px;
     border-radius: 5px;
     transition: 0.3s;
-  }
-  .bar:hover {
-    width: 50%;
   }
   .bar.dua {
     width: 75%;
@@ -438,18 +435,8 @@ li a.nav-item.active {
   .bar.tiga {
     width: 50%;
   }
-  .nav-toggle:hover .bar {
-    width: 50%;
-  }
-  .nav-toggle:hover .bar.dua {
-    width: 75%;
-  }
-  .nav-toggle:hover .bar.tiga {
-    width: 100%;
-  }
   .bar.clicked {
-    background-color: var(--btn-bg);
-    width: 50%;
+    background-color: var(--btn-bg) !important;
   }
   .bar.dua.clicked {
     width: 75%;
@@ -459,5 +446,10 @@ li a.nav-item.active {
   }
   .nav-toggle:hover > .bar {
     background-color: var(--btn-bg);
+  }
+
+  .card{
+    height: 150px;
+    width: 150px;
   }
 }

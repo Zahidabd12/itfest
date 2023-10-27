@@ -17,7 +17,9 @@ window.addEventListener("scroll", () => {
 
 const overlayNav = document.getElementsByClassName("overlay-nav")[0];
 const button = document.getElementsByClassName("nav-toggle")[0];
-const bar = document.querySelectorAll(".bar");
+const bar = document.querySelector(".bar");
+const barDua = document.querySelector(".bar.dua");
+const barTiga = document.querySelector(".bar.tiga");
 let isToggled = false;
 
 button.addEventListener("click", function () {
@@ -26,8 +28,12 @@ button.addEventListener("click", function () {
   if (isToggled) {
     overlayNav.classList.add("muncul");
     bar.classList.add("clicked");
+    barDua.classList.add("clicked");
+    barTiga.classList.add("clicked");
   } else {
     overlayNav.classList.remove("muncul");
     bar.classList.remove("clicked");
+    barDua.classList.remove("clicked");
+    barTiga.classList.remove("clicked");
   }
 });
