@@ -356,7 +356,6 @@ li a.nav-item.active {
   nav ul li {
     display: none;
   }
-
   #hero h1 {
     font-size: 2rem;
     line-height: 2.2rem;
@@ -447,9 +446,8 @@ li a.nav-item.active {
   .nav-toggle:hover > .bar {
     background-color: var(--btn-bg);
   }
-
-  .card{
-    height: 150px;
-    width: 150px;
+  .card {
+    height: 125px;
+    width: 125px;
   }
 }
