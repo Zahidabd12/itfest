@@ -402,7 +402,7 @@ li a.nav-item.active {
   }
   .card-container {
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: center;
   }
   .card-container:hover .card:not(:hover) {
     filter: blur(0);
