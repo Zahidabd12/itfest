@@ -4,29 +4,30 @@ const active = document.getElementsByClassName("nav-item")[0];
 const yPos = layanan.offsetTop;
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY >= yPos - 215) {
-    navbar.classList.add("nav-scrolled");
+  if (window.scrollY >= yPos - 200) {
     active.classList.add("active");
-  } else if (window.scrollY > 100) {
-    // navbar.classList.add("nav-hidden");
+  }
+  if (window.scrollY > 5) {
+    navbar.classList.add("nav-scrolled");
   } else {
-    navbar.classList.remove("nav-hidden");
-    navbar.classList.remove("nav-scrolled");
     active.classList.remove("active");
+    navbar.classList.remove("nav-scrolled");
   }
 });
 
-const overlayNav = document.getElementsByClassName("overlay-nav")[0]; // Access the first element in the collection
-const button = document.getElementsByClassName("nav-toggle")[0]; // Access the first element in the collection
-
+const overlayNav = document.getElementsByClassName("overlay-nav")[0];
+const button = document.getElementsByClassName("nav-toggle")[0];
+const bar = document.querySelectorAll(".bar");
 let isToggled = false;
 
 button.addEventListener("click", function () {
   isToggled = !isToggled; // Toggle the state
 
   if (isToggled) {
-    overlayNav.classList.add("muncul"); // Add the "muncul" class to hide the element
+    overlayNav.classList.add("muncul");
+    bar.classList.add("clicked");
   } else {
-    overlayNav.classList.remove("muncul"); // Remove the "muncul" class to show the element
+    overlayNav.classList.remove("muncul");
+    bar.classList.remove("clicked");
   }
 });
