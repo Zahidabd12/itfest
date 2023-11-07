@@ -23,7 +23,7 @@ const barTiga = document.querySelector(".bar.tiga");
 let isToggled = false;
 
 button.addEventListener("click", function () {
-  isToggled = !isToggled; // Toggle the state
+  isToggled = !isToggled;
 
   if (isToggled) {
     overlayNav.classList.add("muncul");
