@@ -400,7 +400,7 @@ li a.nav-item.active {
   color: var(--paragraf);
   padding-bottom: 2rem;
 }
-  
+
 .card-container {
   justify-content: center;
   flex-wrap: wrap;
@@ -524,8 +524,7 @@ li a.nav-item.active {
   box-shadow: 2px 2px 3px var(--btn-bg);
 }
 
-
-#apotek{
+#apotek {
   background-color: var(--white);
   padding-bottom: 5rem;
 }
@@ -543,6 +542,17 @@ li a.nav-item.active {
   font-weight: 700;
   color: var(--paragraf);
   padding-bottom: 2rem;
+}
+
+#contact{
+  background-color: var(--white);
+}
+
+#contact h1 {
+  padding: 3rem 0 1rem 0;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--headline);
 }
 
 /* Tablet */
