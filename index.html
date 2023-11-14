@@ -8,6 +8,7 @@
     <title>Nusantara Medics.</title>
   </head>
   <body>
+    <div class="mode">🌙</div>
     <div class="progress-bar"></div>
     <!-- Navbar -->
     <nav>
@@ -85,10 +86,24 @@
           </p>
         </div>
         <div class="card-container d-flex">
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
+          <div class="card">
+            <div class="icon">
+              <img src="img/chat.svg" alt="" width="160px" />
+              <figcaption>Tanya Dokter</figcaption>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/book.svg" alt="" width="160px" />
+            <figcaption>Tips Kesehatan</figcaption>
+          </div>
+          <div class="card">
+            <img src="img/gaya.svg" alt="" width="160px" />
+            <figcaption>Gaya Hidup</figcaption>
+          </div>
+          <div class="card">
+            <img src="img/location.svg" alt="" width="160px" />
+            <figcaption>Apotek Terdekat</figcaption>
+          </div>
         </div>
         <div class="content-layanan d-flex">
           <div class="layanan-text text-left">
@@ -165,7 +180,7 @@
     <!-- Testimoni -->
 
     <section id="testi">
-      <div class="container">
+      <div class="container text-center">
         <h1>Testimoni Pasien</h1>
         <p>
           Kisah Sukses Pasien: <br />
@@ -197,15 +212,44 @@
 
     <!-- Contact Us -->
     <section id="contact">
-      <div class="container text-center">
+      <div class="container-form text-center">
         <h1>Hubungi Kami :</h1>
+        <form action="" method="post">
+          <label for="nama">Nama</label>
+          <input
+            type="text"
+            name="nama"
+            id="nama"
+            placeholder="Masukkan nama Anda"
+            required
+          />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Masukkan alamat email Anda"
+            required
+          />
+
+          <label for="text">Komplain Anda</label>
+          <textarea
+            name="text"
+            id="text"
+            cols="30"
+            rows="10"
+            placeholder="Tuliskan komplain Anda"
+            required
+          ></textarea>
+
+          <input type="submit" value="Kirim" />
+        </form>
       </div>
     </section>
 
     <!-- Footer -->
-    <section id="footer">
-      
-    </section>
+    <section id="footer"></section>
     <script src="script.js"></script>
   </body>
 </html>
