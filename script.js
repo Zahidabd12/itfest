@@ -76,4 +76,5 @@ const mode = document.getElementsByClassName('mode')[0];
 
 mode.addEventListener('click', function() {
   document.body.classList.toggle('dark');
+  
 });
