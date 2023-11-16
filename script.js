@@ -25,18 +25,12 @@ let isToggled = false;
 button.addEventListener("click", function () {
   isToggled = !isToggled;
 
-  if (isToggled) {
-    overlayNav.classList.add("muncul");
-    bar.classList.add("clicked");
-    barDua.classList.add("clicked");
-    barTiga.classList.add("clicked");
-  } else {
-    overlayNav.classList.remove("muncul");
-    bar.classList.remove("clicked");
-    barDua.classList.remove("clicked");
-    barTiga.classList.remove("clicked");
-  }
+  overlayNav.classList.toggle("muncul", isToggled);
+  bar.classList.toggle("clicked", isToggled);
+  barDua.classList.toggle("clicked", isToggled);
+  barTiga.classList.toggle("clicked", isToggled);
 });
+
 
 // JavaScript
 function handleScroll() {
@@ -76,3 +70,10 @@ function updateProgressBar() {
   const progressBar = document.querySelector('.progress-bar');
   progressBar.style.width = scrollPercentage + '%';
 }
+
+
+const mode = document.getElementsByClassName('mode')[0];
+
+mode.addEventListener('click', function() {
+  document.body.classList.toggle('dark');
+});

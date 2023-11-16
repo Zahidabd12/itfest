@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="style.css" />
     <title>Nusantara Medics.</title>
   </head>
-  <body>
+  <body class="dark">
     <div class="mode">🌙</div>
     <div class="progress-bar"></div>
     <!-- Navbar -->
     <nav>
       <div class="brand">
-        <img src="img/Logo.png" alt="NusantaraMedics" height="80px" />
+        <div class="logo"></div>
+        <img src="img/logo-dark.png" alt="NusantaraMedics" height="80px" />
       </div>
       <div class="nav-toggle">
         <div class="bar"></div>
@@ -29,10 +30,10 @@
           <a href="#layanan">Layanan</a>
         </div>
         <div class="nav-items">
-          <a href="#">Dokter</a>
+          <a href="#dokter">Dokter</a>
         </div>
         <div class="nav-items">
-          <a href="#">Apotek</a>
+          <a href="#apotek">Apotek</a>
         </div>
         <div class="nav-items">
           <button href="#" class="btn">Mulai Konsultasi</button>
@@ -41,8 +42,8 @@
 
       <ul>
         <li><a href="#layanan" class="nav-item">Layanan</a></li>
-        <li><a href="#" class="nav-item">Dokter</a></li>
-        <li><a href="#" class="nav-item">Apotek</a></li>
+        <li><a href="#dokter" class="nav-item">Dokter</a></li>
+        <li><a href="#apotek" class="nav-item">Apotek</a></li>
         <li><a href="#" class="btn">Mulai Konsultasi</a></li>
       </ul>
     </nav>
@@ -88,21 +89,27 @@
         <div class="card-container d-flex">
           <div class="card">
             <div class="icon">
-              <img src="img/chat.svg" alt="" width="160px" />
+              <img src="img/chat.svg" alt="" />
               <figcaption>Tanya Dokter</figcaption>
             </div>
           </div>
           <div class="card">
-            <img src="img/book.svg" alt="" width="160px" />
-            <figcaption>Tips Kesehatan</figcaption>
+            <div class="icon">
+              <img src="img/book.svg" alt="" />
+              <figcaption>Tips Kesehatan</figcaption>
+            </div>
           </div>
           <div class="card">
-            <img src="img/gaya.svg" alt="" width="160px" />
-            <figcaption>Gaya Hidup</figcaption>
+            <div class="icon">
+              <img src="img/gaya.svg" alt="" />
+              <figcaption>Gaya Hidup</figcaption>
+            </div>
           </div>
           <div class="card">
-            <img src="img/location.svg" alt="" width="160px" />
-            <figcaption>Apotek Terdekat</figcaption>
+            <div class="icon">
+              <img src="img/location.svg" alt="" />
+              <figcaption>Apotek Terdekat</figcaption>
+            </div>
           </div>
         </div>
         <div class="content-layanan d-flex">
@@ -134,7 +141,7 @@
       <img src="img/wave-putih.svg" alt="" />
       <div class="container text-center">
         <h1>Temui Dokter Handal Kami</h1>
-        <p>
+        <p class="dokter-text">
           Tentukan Kesehatan Anda dengan Yang Terbaik: Pilih Tenaga Medis
           Terpercaya di Sini!
         </p>
@@ -181,17 +188,49 @@
 
     <section id="testi">
       <div class="container text-center">
-        <h1>Testimoni Pasien</h1>
-        <p>
+        <h1 class="testi-title">Testimoni Pasien</h1>
+        <p class="testi-text">
           Kisah Sukses Pasien: <br />
           Pengalaman Pribadi dengan Layanan Kesehatan Kami
         </p>
 
         <div class="card-container d-flex">
-          <div class="card-testi"></div>
-          <div class="card-testi"></div>
-          <div class="card-testi"></div>
-          <div class="card-testi"></div>
+          <div class="card-testi d-flex">
+            <div class="image"></div>
+            <div class="testi">
+              <h1>Kunti Bogel</h1>
+              <p>
+                "Gege banget saya disini baru dilihat dokternya langsung sembuh"
+              </p>
+            </div>
+          </div>
+          <div class="card-testi d-flex">
+            <div class="image"></div>
+            <div class="testi">
+              <h1>Kunti Bogel</h1>
+              <p>
+                "Gege banget saya disini baru dilihat dokternya langsung sembuh"
+              </p>
+            </div>
+          </div>
+          <div class="card-testi d-flex">
+            <div class="image"></div>
+            <div class="testi">
+              <h1>Kunti Bogel</h1>
+              <p>
+                "Gege banget saya disini baru dilihat dokternya langsung sembuh"
+              </p>
+            </div>
+          </div>
+          <div class="card-testi d-flex">
+            <div class="image"></div>
+            <div class="testi">
+              <h1>Kunti Bogel</h1>
+              <p>
+                "Gege banget saya disini baru dilihat dokternya langsung sembuh"
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -200,7 +239,7 @@
     <section id="apotek">
       <img src="img/wave-biru.svg" alt="" />
       <div class="container text-center">
-        <h1>Temukan Apotek Disekitarmu</h1>
+        <h1 class="apotek-tile">Temukan Apotek Disekitarmu</h1>
       </div>
       <div class="card-container d-flex">
         <div class="card-testi"></div>
@@ -243,13 +282,24 @@
             required
           ></textarea>
 
-          <input type="submit" value="Kirim" />
+          <input type="submit" value="Kirim" class="btn" />
         </form>
       </div>
     </section>
 
     <!-- Footer -->
-    <section id="footer"></section>
+    <section id="footer">
+      <div class="container d-flex">
+        <div class="center">
+          <img src="img/Logo.png" alt="">
+          <figcaption>
+            <h1>Nusantara Medics</h1>
+            <p>Menemukan Kualitas Layanan Medis Terbaik yang Tidak Hanya Handal dan Terpercaya, Tetapi Juga Didukung oleh Tim Profesional Berkualitas untuk Menjamin Kesehatan dan Kesejahteraan Anda yang Optimal.</p>
+          </figcaption>
+        </div>
+      </div>
+    </section>
+
     <script src="script.js"></script>
   </body>
 </html>
