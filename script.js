@@ -1,18 +1,29 @@
-const layanan = document.getElementById("layanan");
-const navbar = document.querySelector("nav");
-const active = document.getElementsByClassName("nav-item")[0];
-const yPos = layanan.offsetTop;
+document.addEventListener("DOMContentLoaded", function () {
+  const navbar = document.querySelector("nav");
+  const navlinks = document.querySelectorAll(".nav-item");
 
-window.addEventListener("scroll", () => {
-  if (window.scrollY >= yPos - 200) {
-    active.classList.add("active");
-  }
-  if (window.scrollY > 5) {
-    navbar.classList.add("nav-scrolled");
-  } else {
-    active.classList.remove("active");
-    navbar.classList.remove("nav-scrolled");
-  }
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > navbar.offsetHeight) {
+      navbar.classList.add("nav-scrolled");
+    } else {
+      navbar.classList.remove("nav-scrolled");
+    }
+    // Tandai navlink yang aktif berdasarkan posisi scroll
+    let fromTop = window.scrollY;
+
+    navlinks.forEach(function (link) {
+      let section = document.querySelector(link.hash);
+
+      if (
+        section.offsetTop <= fromTop &&
+        section.offsetTop + section.offsetHeight > fromTop
+      ) {
+        link.classList.add("active");
+      } else {
+        link.classList.remove("active");
+      }
+    });
+  });
 });
 
 const overlayNav = document.getElementsByClassName("overlay-nav")[0];
