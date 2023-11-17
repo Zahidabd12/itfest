@@ -112,7 +112,7 @@ mode.addEventListener("click", function () {
     waveSatu.setAttribute("fill", "#fffffe");
     waveDua.setAttribute("fill", "#D8EEFD");
     mode.innerHTML = "🌙";
-    logos.forEach((logo) => (logo.src = "img/logo.png"));
+    logos.forEach((logo) => (logo.src = "img/Logo.png"));
   }
 });
 
