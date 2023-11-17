@@ -29,9 +29,3 @@ Temukan apotek terdekat dengan mudah menggunakan fitur pencarian kami. Kami meny
 ## Kontribusi
 
 Jika Anda tertarik untuk berkontribusi pada Nusantara Medics, silakan lihat di fork repository kami.
-
-## Lisensi
-
-Proyek ini dilisensikan di bawah [Lisensi MIT](LICENSE).
-
----
