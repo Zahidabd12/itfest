@@ -532,6 +532,17 @@ body.dark #layanan p {
   position: relative;
   border-radius: 5px;
   background-color: var(--white);
+  box-shadow: 4px 4px 8px var(--btn-bg);
+  transition: 0.4s ease-out;
+  filter: blur(0);
+}
+body.dark .card {
+  height: 200px;
+  width: 200px;
+  display: block;
+  position: relative;
+  border-radius: 5px;
+  background-color: var(--white);
   box-shadow: 4px 4px 8px var(--highlight-dark);
   transition: 0.4s ease-out;
   filter: blur(0);
@@ -871,6 +882,9 @@ body.dark #footer {
   background-color: var(--secondary-dark);
 }
 #footer p {
+  color: var(--headline);
+}
+body.dark #footer p{
   color: var(--headline-dark);
 }
 .p-2 {

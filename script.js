@@ -31,7 +31,6 @@ button.addEventListener("click", function () {
   barTiga.classList.toggle("clicked", isToggled);
 });
 
-
 // JavaScript
 function handleScroll() {
   const animatedObjects = document.querySelectorAll(".card");
@@ -42,9 +41,9 @@ function handleScroll() {
     const objectPosition = animatedObject.getBoundingClientRect().top;
     const layananPosition = layanan.getBoundingClientRect().top;
     if (layananPosition < windowHeight * 0.75) {
-      layanan.classList.add('aos');
+      layanan.classList.add("aos");
     } else {
-      layanan.classList.remove('aos');
+      layanan.classList.remove("aos");
     }
     if (objectPosition < windowHeight * 0.75) {
       animatedObject.style.opacity = 1;
@@ -57,24 +56,25 @@ function handleScroll() {
 window.addEventListener("scroll", handleScroll);
 handleScroll();
 
-window.onscroll = function() {
+window.onscroll = function () {
   updateProgressBar();
 };
 
 function updateProgressBar() {
-  const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-  const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
-  const clientHeight = document.documentElement.clientHeight || document.body.clientHeight;
+  const scrollTop =
+    document.documentElement.scrollTop || document.body.scrollTop;
+  const scrollHeight =
+    document.documentElement.scrollHeight || document.body.scrollHeight;
+  const clientHeight =
+    document.documentElement.clientHeight || document.body.clientHeight;
 
   const scrollPercentage = (scrollTop / (scrollHeight - clientHeight)) * 100;
-  const progressBar = document.querySelector('.progress-bar');
-  progressBar.style.width = scrollPercentage + '%';
+  const progressBar = document.querySelector(".progress-bar");
+  progressBar.style.width = scrollPercentage + "%";
 }
 
+const mode = document.getElementsByClassName("mode")[0];
 
-const mode = document.getElementsByClassName('mode')[0];
-
-mode.addEventListener('click', function() {
-  document.body.classList.toggle('dark');
-  
+mode.addEventListener("click", function () {
+  document.body.classList.toggle("dark");
 });
