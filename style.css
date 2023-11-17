@@ -479,14 +479,26 @@ body.dark .hero-text p {
 #layanan {
   background-color: var(--white);
   text-align: center;
+  overflow: hidden;
 }
 body.dark #layanan {
   background-color: var(--background-dark);
 }
 .layanan-desc {
-  transform: translateX(-100%);
+  transform: translateY(-100%);
   opacity: 0;
   transition: 0.2s ease-in;
+}
+.dokter-desc {
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: 0.2s ease-in;
+}
+.layanan-text{
+  transform: translateX(-100%);
+}
+.layanan-image{
+  transform: translateX(100%);
 }
 .align-items-center {
   align-items: center;
@@ -613,7 +625,8 @@ body.dark #dokter p.dokter-text {
   background-color: var(--white);
   box-shadow: 0px 5px 10px var(--shadow);
   overflow: hidden;
-  transition: 0.4 ease-out;
+  opacity: 0;
+  transition: 0.5 ease-in;
 }
 .image-card {
   height: 15rem;

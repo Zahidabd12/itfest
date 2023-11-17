@@ -15,8 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
       let section = document.querySelector(link.hash);
 
       if (
-        section.offsetTop <= fromTop &&
-        section.offsetTop + section.offsetHeight > fromTop
+        section.offsetTop - 250 <= fromTop &&
+        section.offsetTop - 250 + section.offsetHeight > fromTop
       ) {
         link.classList.add("active");
       } else {
@@ -45,24 +45,36 @@ button.addEventListener("click", function () {
 // JavaScript
 function handleScroll() {
   const animatedObjects = document.querySelectorAll(".card");
-  const layanan = document.getElementsByClassName("layanan-desc")[0];
+  const dokters = document.querySelectorAll(".dokter-card");
+  const layanan = document.querySelector(".layanan-desc");
+  const layananText = document.querySelector(".layanan-text");
+  const layananImage = document.querySelector('.layanan-image');
+  const doktitle = document.querySelector(".dokter-desc");
   const windowHeight = window.innerHeight;
 
   animatedObjects.forEach((animatedObject) => {
     const objectPosition = animatedObject.getBoundingClientRect().top;
     const layananPosition = layanan.getBoundingClientRect().top;
-    if (layananPosition < windowHeight * 0.75) {
-      layanan.classList.add("aos");
-    } else {
-      layanan.classList.remove("aos");
-    }
-    if (objectPosition < windowHeight * 0.75) {
-      animatedObject.style.opacity = 1;
-    } else {
-      animatedObject.style.opacity = 0;
-    }
+    const layananTextPosition = layananText.getBoundingClientRect().top;
+    const layananImagePosition = layananImage.getBoundingClientRect().top;
+
+    layananImage.classList.toggle("aos", layananPosition < windowHeight * 0.75);
+    layananText.classList.toggle("aos", layananPosition < windowHeight * 0.75);
+    layanan.classList.toggle("aos", layananPosition < windowHeight * 0.75);
+    animatedObject.style.opacity = objectPosition < windowHeight * 0.75 ? 1 : 0;
+  });
+
+  dokters.forEach((dokter) => {
+    const dokterPosition = dokter.getBoundingClientRect().top;
+    const doktitlePosition = doktitle.getBoundingClientRect().top;
+
+    dokter.style.opacity = dokterPosition < windowHeight * 0.75 ? 1 : 0;
+    doktitle.classList.toggle("aos", doktitlePosition < windowHeight * 0.75);
   });
 }
+
+// Call the function when the scroll event occurs
+window.addEventListener("scroll", handleScroll);
 
 window.addEventListener("scroll", handleScroll);
 handleScroll();
