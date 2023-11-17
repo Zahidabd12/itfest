@@ -73,8 +73,22 @@ function updateProgressBar() {
   progressBar.style.width = scrollPercentage + "%";
 }
 
-const mode = document.getElementsByClassName("mode")[0];
+const mode = document.querySelector(".mode");
+const logos = document.querySelectorAll("#logo-besar");
+const waveSatu = document.getElementById("wave-satu");
+const waveDua = document.getElementById("wave-dua");
 
 mode.addEventListener("click", function () {
   document.body.classList.toggle("dark");
+  if (document.body.classList.contains("dark")) {
+    waveSatu.setAttribute("fill", "#0f0e17");
+    waveDua.setAttribute("fill", "#f25f4c");
+    mode.innerHTML = "🌤️";
+    logos.forEach((logo) => (logo.src = "img/logo-dark.png"));
+  } else {
+    waveSatu.setAttribute("fill", "#fffffe");
+    waveDua.setAttribute("fill", "#D8EEFD");
+    mode.innerHTML = "🌙";
+    logos.forEach((logo) => (logo.src = "img/logo.png"));
+  }
 });
