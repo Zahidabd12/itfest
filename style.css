@@ -144,8 +144,7 @@ table {
   --headline-dark: #fffffe;
   --headline-hover-dark: #a8a8a8;
   --highlight-dark: #ff8906;
-  --secondary-dark: #f25f4c;
-  --teritary-dark: #e53170;
+  --secondary-dark: #232946;
   --paragraph-dark: #eaeaea;
   --nav-scrolled-dark: #0f0e17e8;
 }
@@ -225,7 +224,7 @@ body {
 body.dark {
   transition: 1s ease-out;
 }
-h1{
+h1 {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 .mode {
@@ -715,6 +714,14 @@ body.dark #testi p.testi-text {
   box-shadow: 2px 2px 3px var(--btn-bg);
   overflow: hidden;
 }
+body.dark .card-testi {
+  width: 30rem;
+  min-height: 15rem;
+  background-color: var(--white);
+  box-sizing: border-box;
+  box-shadow: 2px 2px 3px var(--highlight-dark);
+  overflow: hidden;
+}
 .card-apotek {
   width: 30rem;
   height: 15rem;
@@ -738,6 +745,15 @@ body.dark .card-apotek {
   width: 50%;
   height: 100%;
   background-size: cover;
+  transition: 0.2s ease-in;
+}
+.card-apotek .image-apotek:hover {
+  background-color: salmon;
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  transform: scale(1.12);
+  transition: 0.5s ease-out;
 }
 .card-apotek .detail-apotek {
   width: 70%;

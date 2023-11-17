@@ -93,7 +93,7 @@ mode.addEventListener("click", function () {
   document.body.classList.toggle("dark");
   if (document.body.classList.contains("dark")) {
     waveSatu.setAttribute("fill", "#0f0e17");
-    waveDua.setAttribute("fill", "#f25f4c");
+    waveDua.setAttribute("fill", "#232946");
     mode.innerHTML = "🌤️";
     logos.forEach((logo) => (logo.src = "img/logo-dark.png"));
   } else {
