@@ -985,6 +985,70 @@ body.dark #footer p {
   padding: 2rem;
   color: white;
 }
+body.popup-active {
+  overflow: hidden;
+}
+#form-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 90%;
+  z-index: 1000;
+}
+
+#form-popup h2 {
+  text-align: center;
+  color: #333;
+}
+
+#form-popup label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#form-popup input,
+#form-popup textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#form-popup button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+#form-popup button.cancel {
+  background-color: #ccc;
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
 @media (max-width: 430px) {
   nav ul li {
     display: none !important;

@@ -8,6 +8,28 @@
     <title>Nusantara Medics.</title>
   </head>
   <body>
+    <!-- Pop-up Formulir Konsultasi -->
+    <div id="overlay"></div>
+    <div id="form-popup">
+      <h2>Formulir Konsultasi</h2>
+      <form action="" method="post">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="pesan">Pesan:</label>
+        <textarea id="pesan" name="pesan" rows="4" required></textarea>
+
+        <button type="submit" onclick="submitForm()">Mulai Konsultasi</button>
+        <!-- Tombol untuk menutup pop-up -->
+        <button type="button" class="cancel" onclick="closeForm()">
+          Tutup
+        </button onclick="openFrom()">
+      </form>
+    </div>
+
     <div class="mode">🌙</div>
     <div class="progress-bar"></div>
     <!-- Navbar -->
@@ -41,14 +63,14 @@
           <a href="#apotek">Apotek</a>
         </div>
         <div class="nav-itm">
-          <button href="#" class="btn">Mulai Konsultasi</button>
+          <button onclick="openFrom()" class="btn">Mulai Konsultasi</button>
         </div>
       </div>
       <ul>
         <li><a href="#layanan" class="nav-item">Layanan</a></li>
         <li><a href="#dokter" class="nav-item">Dokter</a></li>
         <li><a href="#apotek" class="nav-item">Apotek</a></li>
-        <li><a href="#" class="btn">Mulai Konsultasi</a></li>
+        <li><a onclick="openForm()" class="btn">Mulai Konsultasi</a></li>
       </ul>
     </nav>
     <!-- Akhir Navbar -->
@@ -68,7 +90,7 @@
             oleh tim profesional berkualitas untuk memastikan kesehatan dan
             kesejahteraan optimal Anda.&quot;
           </p>
-          <a href="#">
+          <a href="#" onclick="openForm()">
             <button class="btn btn-hero">Mulai Konsultasi</button>
           </a>
         </div>
@@ -129,7 +151,7 @@
               ৹ Konten Edukasi Kesehatan. <br />
               ৹ Pencarian Dokter dan Rumah Sakit Terdekat.
             </p>
-            <button class="btn">Mulai Konsultasi</button>
+            <button class="btn" onclick="openForm();">Mulai Konsultasi</button>
           </div>
           <div class="layanan-image">
             <img src="img/dokter2.png" alt="" width="400px" />
@@ -169,7 +191,7 @@
           <div class="name-card text-center">
             <h2>Dr. Asep</h2>
             <p>Spesialis mata</p>
-            <button class="btn">Mulai Konsultasi</button>
+            <button class="btn" onclick="openForm()">Mulai Konsultasi</button>
           </div>
         </div>
         <div class="dokter-card">
@@ -180,7 +202,7 @@
           <div class="name-card text-center">
             <h2>Dr. Elsa</h2>
             <p>Spesialis dalam</p>
-            <button class="btn">Mulai Konsultasi</button>
+            <button onclick="openForm()" class="btn">Mulai Konsultasi</button>
           </div>
         </div>
         <div class="dokter-card">
@@ -191,7 +213,7 @@
           <div class="name-card text-center">
             <h2>Dr. Rahmad</h2>
             <p>Spesialis hewan</p>
-            <button class="btn">Mulai Konsultasi</button>
+            <button onclick="openForm()" class="btn">Mulai Konsultasi</button>
           </div>
         </div>
         <div class="dokter-card">
@@ -202,7 +224,7 @@
           <div class="name-card text-center">
             <h2>Dr. Joko</h2>
             <p>Spesialis Anak</p>
-            <button class="btn">Mulai Konsultasi</button>
+            <button onclick="openForm()" class="btn">Mulai Konsultasi</button>
           </div>
         </div>
       </div>
@@ -257,7 +279,10 @@
             </div>
           </div>
           <div class="card-testi d-flex">
-            <div class="image" style="background-image: url(img/testi4.png);"></div>
+            <div
+              class="image"
+              style="background-image: url(img/testi4.png)"
+            ></div>
             <div class="testi">
               <h1>Klee</h1>
               <p>
@@ -392,7 +417,6 @@
       </div>
       <div class="copy">Copyright©2023 By Code de Rune</div>
     </section>
-
     <script src="script.js"></script>
   </body>
 </html>

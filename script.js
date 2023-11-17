@@ -48,7 +48,7 @@ function handleScroll() {
   const dokters = document.querySelectorAll(".dokter-card");
   const layanan = document.querySelector(".layanan-desc");
   const layananText = document.querySelector(".layanan-text");
-  const layananImage = document.querySelector('.layanan-image');
+  const layananImage = document.querySelector(".layanan-image");
   const doktitle = document.querySelector(".dokter-desc");
   const windowHeight = window.innerHeight;
 
@@ -115,3 +115,21 @@ mode.addEventListener("click", function () {
     logos.forEach((logo) => (logo.src = "img/logo.png"));
   }
 });
+
+function openForm() {
+  document.getElementById("form-popup").style.display = "block";
+  document.getElementById("overlay").style.display = "block";
+  document.body.classList.add("popup-active");
+}
+
+function closeForm() {
+  document.getElementById("form-popup").style.display = "none";
+  document.getElementById("overlay").style.display = "none";
+  document.body.classList.remove("popup-active");
+}
+
+function submitForm() {
+  alert('Konsultasi terkirim');
+  // Optionally, you can redirect or refresh the page using window.location
+  window.location.reload();
+}
