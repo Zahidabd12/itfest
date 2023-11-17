@@ -28,11 +28,7 @@ Temukan apotek terdekat dengan mudah menggunakan fitur pencarian kami. Kami meny
 ```
 ## Kontribusi
 
-Jika Anda tertarik untuk berkontribusi pada Nusantara Medics, silakan lihat [Pedoman Kontribusi](CONTRIBUTING.md).
-
-## Umpan Balik
-
-Kami menghargai umpan balik Anda! Jika Anda memiliki saran, isu, atau pertanyaan, silakan [ajukan isu](https://github.com/nusantara-medics/feedback) di repositori GitHub kami.
+Jika Anda tertarik untuk berkontribusi pada Nusantara Medics, silakan lihat di fork repository kami.
 
 ## Lisensi
 
