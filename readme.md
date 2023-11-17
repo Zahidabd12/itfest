@@ -28,7 +28,7 @@ Temukan apotek terdekat dengan mudah menggunakan fitur pencarian kami. Kami meny
 ```
 ## Fitur Tambahan: Dark Mode
 
-### Fitur Dark Mode/Light Mode dengan menekan tombol di bawah kiri untuk kenyamanan pengguna
+Fitur Dark Mode/Light Mode dengan menekan tombol di bawah kiri untuk kenyamanan pengguna
 
 ## Kontribusi
 
