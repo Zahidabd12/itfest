@@ -83,7 +83,7 @@
     <section id="layanan">
       <div class="container">
         <div class="layanan-desc">
-          <h1>Layanan Kesehatan Untuk Anda</h1>
+          <h1 class="title">Layanan Kesehatan Untuk Anda</h1>
           <p>
             Nusantara medics menyediakan berbagai macam layanan kesehatan yang
             dapat anda akses dan manfaatkan, pelayanan yang kami sediakan antara
@@ -152,7 +152,7 @@
       </svg>
       <div class="container text-center">
         <div class="dokter-desc">
-          <h1>Temui Dokter Handal Kami</h1>
+          <h1 class="title">Temui Dokter Handal Kami</h1>
           <p class="dokter-text">
             Tentukan Kesehatan Anda dengan Yang Terbaik: Pilih Tenaga Medis
             Terpercaya di Sini!
@@ -162,7 +162,10 @@
 
       <div class="card-container d-flex">
         <div class="dokter-card">
-          <div class="image-card"></div>
+          <div
+            class="image-card"
+            style="background-image: url(img/dokter.png)"
+          ></div>
           <div class="name-card text-center">
             <h2>Dr. Asep</h2>
             <p>Spesialis mata</p>
@@ -170,15 +173,21 @@
           </div>
         </div>
         <div class="dokter-card">
-          <div class="image-card"></div>
+          <div
+            class="image-card"
+            style="background-image: url(img/dokter3.png)"
+          ></div>
           <div class="name-card text-center">
-            <h2>Dr. Bambang</h2>
+            <h2>Dr. Elsa</h2>
             <p>Spesialis dalam</p>
             <button class="btn">Mulai Konsultasi</button>
           </div>
         </div>
         <div class="dokter-card">
-          <div class="image-card"></div>
+          <div
+            class="image-card"
+            style="background-image: url(img/dokter4.png)"
+          ></div>
           <div class="name-card text-center">
             <h2>Dr. Rahmad</h2>
             <p>Spesialis hewan</p>
@@ -186,7 +195,10 @@
           </div>
         </div>
         <div class="dokter-card">
-          <div class="image-card"></div>
+          <div
+            class="image-card"
+            style="background-image: url(img/dokter5.png)"
+          ></div>
           <div class="name-card text-center">
             <h2>Dr. Joko</h2>
             <p>Spesialis Anak</p>
@@ -201,7 +213,7 @@
 
     <section id="testi">
       <div class="container text-center">
-        <h1 class="testi-title">Testimoni Pasien</h1>
+        <h1 class="testi-title title">Testimoni Pasien</h1>
         <p class="testi-text">
           Kisah Sukses Pasien: <br />
           Pengalaman Pribadi dengan Layanan Kesehatan Kami
@@ -209,36 +221,45 @@
 
         <div class="card-container d-flex">
           <div class="card-testi d-flex">
-            <div class="image"></div>
+            <div
+              class="image"
+              style="background-image: url(img/testi1.png)"
+            ></div>
             <div class="testi">
-              <h1>Kunti Bogel</h1>
+              <h1>Sayu</h1>
               <p>
                 "Gege banget saya disini baru dilihat dokternya langsung sembuh"
               </p>
             </div>
           </div>
           <div class="card-testi d-flex">
-            <div class="image"></div>
+            <div
+              class="image"
+              style="background-image: url(img/testi2.png)"
+            ></div>
             <div class="testi">
-              <h1>Kunti Bogel</h1>
+              <h1>Diona</h1>
               <p>
                 "Gege banget saya disini baru dilihat dokternya langsung sembuh"
               </p>
             </div>
           </div>
           <div class="card-testi d-flex">
-            <div class="image"></div>
+            <div
+              class="image"
+              style="background-image: url(img/testi3.png)"
+            ></div>
             <div class="testi">
-              <h1>Kunti Bogel</h1>
+              <h1>Nahida</h1>
               <p>
                 "Gege banget saya disini baru dilihat dokternya langsung sembuh"
               </p>
             </div>
           </div>
           <div class="card-testi d-flex">
-            <div class="image"></div>
+            <div class="image" style="background-image: url(img/testi4.png);"></div>
             <div class="testi">
-              <h1>Kunti Bogel</h1>
+              <h1>Klee</h1>
               <p>
                 "Gege banget saya disini baru dilihat dokternya langsung sembuh"
               </p>
@@ -259,7 +280,7 @@
         ></path>
       </svg>
       <div class="container text-center">
-        <h1 class="apotek-title">Temukan Apotek Disekitarmu</h1>
+        <h1 class="apotek-title title">Temukan Apotek Disekitarmu</h1>
       </div>
       <div class="card-container d-flex">
         <div class="card-apotek d-flex">
@@ -324,9 +345,8 @@
     <!-- Contact Us -->
     <section id="contact">
       <div class="container-form text-center">
-        <h1>Hubungi Kami :</h1>
+        <h1 class="title">Hubungi Kami :</h1>
         <form action="" method="post">
-          <label for="nama">Nama</label>
           <input
             type="text"
             name="nama"
@@ -334,8 +354,6 @@
             placeholder="Masukkan nama Anda"
             required
           />
-
-          <label for="email">Email</label>
           <input
             type="email"
             name="email"
@@ -343,8 +361,6 @@
             placeholder="Masukkan alamat email Anda"
             required
           />
-
-          <label for="text">Komplain Anda</label>
           <textarea
             name="text"
             id="text"
