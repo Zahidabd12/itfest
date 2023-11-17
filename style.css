@@ -293,7 +293,6 @@ nav {
   display: none !important;
 }
 nav.nav-hidden {
-  /* display: none; */
   opacity: 0;
   transition: 0.3s;
 }
