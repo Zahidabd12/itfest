@@ -23,7 +23,7 @@ Temukan apotek terdekat dengan mudah menggunakan fitur pencarian kami. Kami meny
 ## Mulai / Instalasi
 
 ```bash
-    git clone https://github.com/Ashtacon/PersentasiMathP.git
+    git clone https://github.com/Ashtacon/itfest.git
     cd itfest
 ```
 ## Fitur Tambahan: Dark Mode
