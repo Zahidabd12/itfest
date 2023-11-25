@@ -276,6 +276,9 @@ body.dark .progress-bar {
   transform-origin: left center;
   transition: width 0.2s;
 }
+.lh{
+  line-height: 1.5rem !important;
+}
 /* Navbar */
 nav {
   display: flex;
