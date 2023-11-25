@@ -276,7 +276,7 @@ body.dark .progress-bar {
   transform-origin: left center;
   transition: width 0.2s;
 }
-.lh{
+.lh {
   line-height: 1.5rem !important;
 }
 /* Navbar */
@@ -1002,7 +1002,7 @@ body.popup-active {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   max-width: 600px;
   width: 90%;
-  z-index: 1000;
+  z-index: 999999;
 }
 
 #form-popup h2 {
@@ -1049,9 +1049,12 @@ body.popup-active {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 999;
+  z-index: 9999;
 }
 @media (max-width: 430px) {
+  .form-popup {
+    z-index: 9999;
+  }
   nav ul li {
     display: none !important;
   }
@@ -1111,7 +1114,7 @@ body.popup-active {
     flex-wrap: wrap;
     flex-direction: column;
     gap: 2rem;
-    z-index: 9999;
+    z-index: 9997;
     top: 0;
     left: 0;
     bottom: 0;
