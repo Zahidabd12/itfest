@@ -819,7 +819,7 @@ body.dark #apotek {
 }
 .testi p {
   font-weight: thin !important;
-  padding: 0 1.8rem 0 0!important;
+  padding: 0 1.8rem .5rem 0 0!important;
 }
 #apotek h1 {
   padding: 3rem 0 1rem 0;
