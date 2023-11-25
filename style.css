@@ -712,7 +712,7 @@ body.dark #testi h1.testi-title {
   font-size: 1.1rem;
   font-weight: 500 !important;
   color: var(--paragraf);
-  padding-bottom: 2rem;
+  padding: 0 1.8rem 1rem 0 !important;
 }
 body.dark #testi p.testi-text {
   font-size: 1.1rem;
